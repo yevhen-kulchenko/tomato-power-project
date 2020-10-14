@@ -18,6 +18,12 @@ header{
 
 .button-mobile-menu{
     display: inline-flex;
+    outline: transparent;
+
+    position: absolute;
+    z-index: 5;
+    right: 20px;
+    top: 24px;
 
     width: 20px;
     height: 20px;
@@ -26,4 +32,105 @@ header{
 
     border: none;
     background-color: transparent;
+
+    // @media screen and (min-width: 1200px) {
+    //     display: none;
+    // }
+
+    &.is-open{
+        .icon-mobile-menu{
+            display: none;
+        }
+        .icon-mobile-close{
+            display: block;
+        }
+    }
+}
+
+.icon-mobile-close{
+    display: none;
+}
+
+.navigation{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding-top: 60px;
+    width: 250px;
+    height: 502px;
+
+    background-color: $menu-bg-color;
+
+    &.is-open{
+        display: block;
+    }
+}
+
+.buy-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 209px;
+    height: 44px;
+    padding: 0;
+    margin-left: 21px;
+    margin-right: 21px;
+
+    color: $accent-color;
+    background: $primary-bg-color;
+    border: none;
+    border-radius: 22px;
+
+    &:hover,
+    &:focus,
+    &:active{
+        background: $hover-secondary-color;
+    }
+}
+
+.buy-btn-icon{
+    display: block;
+    margin-left: 25px;
+    width: 12px;
+    height: 12px;
+}
+
+.site-nav-list{
+    margin-top: 19px;
+
+    font-weight: 700;
+    color: $white-text-color;
+}
+
+.site-nav-item{
+    border-bottom: 1px solid #E18298;
+
+    &:first-of-type{
+        border-top: 1px solid #E18298;
+    }
+}
+
+.nav-link {
+    display: block;
+
+    width: 250px;
+    height: 43px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 21px;
+
+    
+    &:hover,
+    &:focus,
+    &:active {
+        color: $accent-color;
+    }
+}
+
+.nav-link.current{
+    color: $accent-color;
 }
