@@ -12,10 +12,20 @@
     width: 100%;
     height: 502px;
     background-image: 
-    url(../images/mobile/header-icecream-mobile@2x.png);
+    url(../images/mobile/header-icecream-mobile.png);
     background-size: 170px 410px; 
     background-repeat: no-repeat;
     background-position: top 92px right 32px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../images/mobile/header-icecream-mobile@2x.png);
+        }
 }
 .hero__title {
     margin: 0;
