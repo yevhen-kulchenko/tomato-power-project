@@ -1,12 +1,9 @@
-// .conteiner {
-//     outline: 1px solid black;
-// }
 .hero {
     position: relative;
     overflow: hidden;
     padding-top: 56px;
     height: 502px;
-    background-color: #FFB8CA;
+    background-color: $secondary-bg-color;
 }
 .hero__box {
     position: absolute;
@@ -22,13 +19,22 @@
 }
 .hero__title {
     margin: 0;
-    padding-top: 110px;
+    padding-top: 193px;
     padding-left: 20px;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
     padding-bottom: 20px;
-    color: #FFFFFF;
+    color: $white-text-color;
 }
 .hero__accent {
-    color: #D41443;
+    font-size: 48px;
+    line-height: 96.5%;
+    color: $accent-color;
 }
 .hero__list {
     margin: 0;
@@ -41,21 +47,49 @@
 .hero__item:not(:last-child) {
     margin-right: 8px;
 }
-.button {
-    // background: #D41443;
+.dark-button {
+    width: 62px;
     height: 24px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
     border-radius: 20px;
     border: none;
+    color: $white-text-color;
+    background: $accent-color;
 }
+.light-button {
+    width: 83px;
+    height: 24px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    border-radius: 20px;
+    border: none;
+    color: $accent-color;
+    background: $primary-bg-color;
+}
+.dark-button:hover,
+.dark-button:focus {
+    background: $section-dots-color;
+    cursor: pointer;
+}
+.light-button:hover,
+.light-button:focus {
+    background: $hover-secondary-color;
+    cursor: pointer;
+}
+
 .ellipse {
-    // display: block;
     position: absolute;
     top: 83px;
     right: -62px;
     width: 345px;
     height: 345px;
-    margin-left: auto;
-    // margin-top: 15px;
     background: #FFA5BA;
     border-radius: 50%;
 }
