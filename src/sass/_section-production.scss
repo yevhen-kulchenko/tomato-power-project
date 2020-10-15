@@ -1,10 +1,10 @@
-.prodaction{
+.production{
 padding-top: 125px;
 padding-bottom: 97px;
 background-color: $accessorial-bg-color;
 }
 
-.prodaction__title, .prodaction__title2{
+.production__title, .production__title2{
 margin-top: 0;
 margin-bottom: 15px;
 
@@ -16,13 +16,13 @@ text-align: center;
 text-transform: uppercase;
 }
 
-.prodaction__title {
+.production__title {
 font-size: 18px;
 line-height: 21px;
 color: $accessorial-text-color;
 }
 
-.prodaction__title2 {
+.production__title2 {
 
 font-size: 34px;
 line-height: 39px;
@@ -37,7 +37,7 @@ color:  $accent-color;
 // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.prodaction__text, .prodaction__text2 {
+.production__text, .production__text2 {
 margin-top: 46px;
 margin-left: 30px;
 width: 220px;
@@ -49,11 +49,11 @@ line-height: 162%;
 
 }
 
-.prodaction__text{
+.production__text{
 color: $primary-text-color;
 }
 
-.prodaction__text2 {
+.production__text2 {
 color:  $secondary-text-color;
 
 }
