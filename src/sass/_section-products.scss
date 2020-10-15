@@ -1,3 +1,7 @@
+.products-wrapper {
+  padding-top: 120px;
+  padding-bottom: 98px;
+}
 .products-title {
   font-family: Titan One;
   font-style: normal;
@@ -9,7 +13,7 @@
   text-transform: uppercase;
   color: $accent-color;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 144px;
 }
 .title-text {
   font-family: Titan One;
@@ -24,7 +28,10 @@
 }
 .products-item {
   position: relative;
-  margin-bottom: 17px;
+  padding-top: 161px;
+  &:not(:last-child) {
+    margin-bottom: 130px;
+  }
 }
 .icecream-item {
   background-color: $secondary-bg-color;
@@ -51,7 +58,7 @@
   margin: 0;
   margin-bottom: 30px;
 }
-.paragraf {
+.products-paragraf {
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
@@ -94,5 +101,5 @@
 }
 .blok-absolut {
   position: absolute;
-  top: -30%;
+  top: -23%;
 }
