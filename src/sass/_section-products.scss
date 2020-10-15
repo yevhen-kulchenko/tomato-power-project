@@ -1,6 +1,20 @@
 .products-wrapper {
   padding-top: 120px;
-  padding-bottom: 98px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+    padding-left: 113px;
+    padding-right: 113px;
+  }
 }
 .products-title {
   font-family: Titan One;
@@ -14,6 +28,14 @@
   color: $accent-color;
   margin: 0;
   margin-bottom: 144px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+  }
 }
 .title-text {
   font-family: Titan One;
@@ -25,12 +47,48 @@
   text-transform: uppercase;
   color: $accessorial-text-color;
   margin-bottom: 15px;
+  display: block;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+.products-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .products-item {
   position: relative;
   padding-top: 161px;
+  padding-left: 40px;
+  padding-right: 40px;
   &:not(:last-child) {
     margin-bottom: 130px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 26px;
+    }
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    // margin-right: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 26px;
+    padding-left: 44px;
+    padding-right: 44px;
   }
 }
 .icecream-item {
@@ -57,20 +115,36 @@
   color: $white-text-color;
   margin: 0;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+    margin-bottom: 32px;
+  }
 }
 .products-paragraf {
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 152%;
+  line-height: 1.52;
   text-align: center;
   letter-spacing: 0.04em;
   color: $white-text-color;
-  padding-left: 40px;
-  padding-right: 40px;
+
   margin: 0;
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+    margin-bottom: 40px;
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.76;
+    margin-bottom: 62px;
+  }
 }
 .points-icon {
   width: 26px;
@@ -94,12 +168,14 @@
   height: 15px;
   fill: $section-dots-color;
 }
-.flexbox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .blok-absolut {
   position: absolute;
   top: -23%;
+}
+.is-hidden {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
