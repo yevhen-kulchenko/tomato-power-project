@@ -9,6 +9,9 @@
         padding: 0;
         height: 400px;
     }
+    @media screen and (min-width: 1200px) {
+        height: 665px;
+    }
 }
 .hero__box {
     position: absolute;
@@ -40,7 +43,7 @@
             url(../images/tablet/ellipse1-tablet.png),
             url(../images/tablet/ellipse1-tablet.png);
             background-size: 143px 336px, 125px, 168px 133px, 16px,16px;
-            background-position: top 63px left 378px, top 245px left 34px, bottom 0 right 34px, top 94px right 34px, top 151px right 34px;
+            background-position: top 63px right 247px, top 245px left 34px, bottom 0 right 34px, top 94px right 34px, top 151px right 34px;
 
             @media screen and (min-device-pixel-ratio: 2),
             screen and (-webkit-min-device-pixel-ratio: 2),
@@ -54,6 +57,30 @@
                     url(../images/tablet/ellipse1-tablet@2x.png),
                     url(../images/tablet/ellipse1-tablet@2x.png);
         }
+    }
+    @media screen and (min-width: 1200px) {
+        height: 665px;
+        background-image:
+        url(../images/desktop/header-icecream.png),
+        url(../images/desktop/header-milk.png),
+        url(../images/desktop/girl.png),
+        url(../images/desktop/ellipse1.png),
+        url(../images/desktop/ellipse1.png);
+        background-size: 236px 557px, 188px 191px, 293px 232px, 30px,30px;
+        background-position: top 108px right 450px, bottom 45px left 77px, bottom 0 right 109px, top 156px right 97px, top 248px right 97px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: 
+                url(../images/tablet/header-icecream-tablet@2x.png),
+                url(../images/tablet/header-milk-tablet@2x.png),
+                url(../images/tablet/girl-tablet@2x.png),
+                url(../images/tablet/ellipse1-tablet@2x.png),
+                url(../images/tablet/ellipse1-tablet@2x.png);
+        }   
     }
 }
 .hero__title {
@@ -76,6 +103,13 @@
         font-size: 22px;
         line-height: 25px;
     }
+    @media screen and (min-width: 1200px) {
+        padding-top: 171px;
+        padding-left: 115px;
+        font-size: 38px;
+        line-height: 44px;
+        padding-bottom: 25px;
+    }
 }
 .hero__accent {
     font-size: 48px;
@@ -84,6 +118,10 @@
 
     @media screen and (min-width: 768px) {
         font-size: 34px;
+        line-height: 90.5%;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
         line-height: 90.5%;
     }
 }
@@ -95,12 +133,19 @@
     @media screen and (min-width: 768px) {
         padding-left: 34px;
     }
+    @media screen and (min-width: 1200px) {
+        padding-left: 115px;
+    }
 }
 .hero__item {
     list-style: none;
 }
 .hero__item:not(:last-child) {
     margin-right: 8px;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 15px;
+    }
 }
 .button {
     height: 24px;
@@ -111,16 +156,30 @@
     line-height: 10px;
     border-radius: 20px;
     border: none;
+
+    @media screen and (min-width: 1200px) {
+        height: 40px;
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 .dark-button {
     width: 62px;
     color: $white-text-color;
     background: $accent-color;
+
+    @media screen and (min-width: 1200px) {
+        width: 104px;
+    }
 }
 .light-button {
     width: 83px;
     color: $accent-color;
     background: $primary-bg-color;
+
+    @media screen and (min-width: 1200px) {
+        width: 138px;
+    }
 }
 .dark-button:hover,
 .dark-button:focus {
@@ -135,6 +194,7 @@
 .hero__description {
     position: absolute;
     z-index: 2;
+    display: block;
     top: 292px;
     left: 154px;
     width: 115px;
@@ -142,6 +202,12 @@
 
     @media screen and (max-width: 767px){
         display: none;        
+    }
+    @media screen and (min-width: 1200px){
+        top: 485px;
+        left: 295px;
+        width: 200px;
+        height: 78px;
     }
 }
 .hero__text {
@@ -153,17 +219,27 @@
     font-size: 8px;
     line-height: 150%;
     color: $white-text-color;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 140%;
+    }
 }
 .small-button {
     position: absolute;
-    top: 55px;
-    left: 25px;
+    margin-top: 7px;
     width: 18px;
     height: 18px;
     border: none;
     border-radius: 50%;
     background-color: $primary-bg-color;
     cursor: pointer;
+    
+    @media screen and (min-width: 1200px) {
+        margin-top: 20px;
+        width: 26px;
+        height: 26px;
+    }
 }
 .small-button-arrow {
     width: 15px;
@@ -176,8 +252,12 @@
     top: 96px;
     right: 44px;
 
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 767px) {
         display: none;        
+    }
+    @media screen and (min-width: 1200px) {
+        top: 160px;
+        right: 115px;
     }
 }
 .franchising__text {
@@ -190,9 +270,19 @@
     line-height: 10px;
     text-align: right;
     color: $white-text-color;
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
 }
 .franchising__text:not(:last-child) {
     margin-bottom: 13px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 15px;
+    }
 }
 .franchising__accent {
     font-family: Titan One;
@@ -204,6 +294,11 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $accent-color;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 46px;
+        line-height: 53px;
+    }
 }
 .ellipse {
     position: absolute;
@@ -214,10 +309,16 @@
     background: #FFA5BA;
     border-radius: 50%;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         top: 31px;
-        left: 307px;
+        right: 137px;
         width: 323px;
         height: 323px;
+    }
+    @media screen and (min-width: 1200px) {
+        top: 52px;
+        right: 267px;
+        width: 538px;
+        height: 538px;
     }
 }
