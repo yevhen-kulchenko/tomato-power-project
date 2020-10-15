@@ -132,6 +132,79 @@
     background: $hover-secondary-color;
     cursor: pointer;
 }
+.hero__description {
+    position: absolute;
+    z-index: 2;
+    top: 292px;
+    left: 154px;
+    width: 115px;
+    height: 48px;
+
+    @media screen and (max-width: 767px){
+        display: none;        
+    }
+}
+.hero__text {
+    margin: 0;
+    padding: 0;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 150%;
+    color: $white-text-color;
+}
+.small-button {
+    position: absolute;
+    top: 55px;
+    left: 25px;
+    width: 18px;
+    height: 18px;
+    border: none;
+    border-radius: 50%;
+    background-color: $primary-bg-color;
+    cursor: pointer;
+}
+.small-button-arrow {
+    width: 15px;
+    height: 15px;
+    fill: $section-dots-color;
+}
+.franchising {
+    position: absolute;
+    z-index: 2;
+    top: 96px;
+    right: 44px;
+
+    @media screen and (max-width: 767px){
+        display: none;        
+    }
+}
+.franchising__text {
+    margin: 0;
+    padding: 0;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    color: $white-text-color;
+}
+.franchising__text:not(:last-child) {
+    margin-bottom: 13px;
+}
+.franchising__accent {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+}
 .ellipse {
     position: absolute;
     top: 83px;
