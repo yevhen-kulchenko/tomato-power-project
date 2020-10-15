@@ -81,7 +81,7 @@
   }
 }
 
-.contacts__buttons {
+.contacts__button-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -94,7 +94,7 @@
   }
 }
 
-.contacts__buttons-item {
+.contacts__button-item {
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 10px;
@@ -107,9 +107,14 @@
   }
 }
 
-.button-contacts {
+.contacts__button {
+  // display: inline-flex;
   width: 161px;
   height: 44px;
+  	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: red;
 }
 
 // .contacts__title {
