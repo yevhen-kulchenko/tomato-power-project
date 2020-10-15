@@ -10,34 +10,45 @@ header{
     align-items: center;
     justify-content: space-between;
 
+
     width: 100%;
     padding-top: 6px;
     padding-left: 20px;
     padding-right: 20px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 37px;
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+}
+
+.nav-wrap{
+    display: flex;
+    align-items: center;
 }
 
 .button-mobile-menu{
     display: inline-flex;
     outline: transparent;
 
-    position: absolute;
-    z-index: 5;
-    right: 20px;
-    top: 24px;
-
-    width: 20px;
-    height: 20px;
     padding: 0;
     margin: 0;
 
     border: none;
     background-color: transparent;
 
-    // @media screen and (min-width: 1200px) {
-    //     display: none;
-    // }
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
 
     &.is-open{
+
+        position: absolute;
+        z-index: 5;
+        right: 20px;
+        top: 23px;
+    
         .icon-mobile-menu{
             display: none;
         }
@@ -90,6 +101,17 @@ header{
     &:active{
         background: $hover-secondary-color;
     }
+}
+
+.btn-desktop{
+    width: 160px;
+    margin: 0 0 0 30px;
+
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
 }
 
 .buy-btn-icon{
