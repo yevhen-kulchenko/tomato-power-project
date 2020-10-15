@@ -1,0 +1,128 @@
+.contacts-background {
+  background-image: linear-gradient(
+    $primary-bg-color 170px,
+    $accessorial-bg-color 170px
+  );
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      $primary-bg-color 197px,
+      $accessorial-bg-color 197px
+    );
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+      $primary-bg-color 234px,
+      $accessorial-bg-color 234px
+    );
+  }
+}
+
+.contacts {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 86px 50px 113px 50px;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 119px 36px 158px 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding: 132px 75px 165px 75px;
+  }
+}
+
+.contacts__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.contacts__item {
+  width: 100%;
+  // delete height
+  height: 427px;
+  text-align: center;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  background-color: #fff;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 20px * 2) / 3);
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    // delete height
+    height: 544px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px * 2) / 3);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    // delete height
+    height: 572px;
+  }
+}
+
+.contacts__card {
+  padding: 43px 20px;
+  @media screen and (min-width: 768px) {
+    padding: 50px 31px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 51px 43px 62px 43px;
+  }
+}
+
+.contacts__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 54px;
+  @media screen and (min-width: 768px) {
+    margin-top: 81px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 86px;
+  }
+}
+
+.contacts__buttons-item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
+
+.button-contacts {
+  width: 161px;
+  height: 44px;
+}
+
+// .contacts__title {
+//   margin: 0 0 10px;
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.188;
+//   // color: #fff;
+// }
+
+// .contacts__text {
+//   margin: 0 0 16px;
+//   font-size: 16px;
+//   line-height: 1.188;
+//   // color: #fff;
+// }
