@@ -10,7 +10,6 @@ header{
     align-items: center;
     justify-content: space-between;
 
-
     width: 100%;
     padding-top: 6px;
     padding-left: 20px;
@@ -20,6 +19,7 @@ header{
         padding-top: 37px;
         padding-left: 34px;
         padding-right: 34px;
+
     }
 
     @media screen and (min-width: 1200px) {
@@ -31,9 +31,10 @@ header{
 .nav-wrap{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.button-mobile-menu{
+.burger-button{
     display: inline-flex;
     outline: transparent;
 
@@ -53,16 +54,16 @@ header{
         right: 20px;
         top: 23px;
     
-        .icon-mobile-menu{
+        .button-icon-menu{
             display: none;
         }
-        .icon-mobile-close{
+        .button-icon-close{
             display: block;
         }
     }
 }
 
-.icon-mobile-close{
+.button-icon-close{
     display: none;
 }
 
@@ -104,7 +105,7 @@ header{
     }
 }
 
-.buy-btn{
+.header-button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,13 +130,13 @@ header{
     }
 }
 
-.btn-tablet{
+.mobile-button{
     @media screen and (min-width: 1200px) {
         display: none;
     }
 }
 
-.btn-desktop{
+.main-button{
     width: 160px;
 
     @media screen and (max-width: 767px) {
@@ -147,11 +148,19 @@ header{
     }
 }
 
-.buy-btn-icon{
+.header-button-icon{
     display: block;
-    margin-left: 25px;
+    margin-left: 27px;
     width: 12px;
     height: 12px;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 20px;
+    }
+}
+
+.main-button > .header-button-icon{
+    margin-left: 12px;
 }
 
 .site-nav-list{
@@ -182,7 +191,7 @@ header{
     }
 }
 
-.nav-link {
+.item-link {
     display: block;
 
     width: 250px;
@@ -213,6 +222,6 @@ header{
     }
 }
 
-.nav-link.current{
+.item-link.current{
     color: $accent-color;
 }
