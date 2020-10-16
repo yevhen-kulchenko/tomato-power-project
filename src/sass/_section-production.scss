@@ -1,110 +1,5 @@
 .production{
-<<<<<<< Updated upstream
-padding-top: 125px;
-padding-bottom: 97px;
-background-color: $accessorial-bg-color;
-}
-
-.production__title, .production__title2{
-margin-top: 0;
-margin-bottom: 15px;
-
-font-family: Titan One;
-font-style: normal;
-font-weight: normal;
-
-text-align: center;
-text-transform: uppercase;
-}
-
-.production__title {
-font-size: 18px;
-line-height: 21px;
-color: $accessorial-text-color;
-}
-
-.production__title2 {
-
-font-size: 34px;
-line-height: 39px;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-
-color:  $accent-color;
-
-
-
-// border: 1px solid #000000;
-// text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.production__text, .production__text2 {
-margin-top: 46px;
-margin-left: 30px;
-width: 220px;
-font-family: DM Sans;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 162%;
-
-}
-
-.production__text{
-color: $primary-text-color;
-}
-
-.production__text2 {
-color:  $secondary-text-color;
-
-}
-
-// .prodaction-button {
-
-// }
-
-.items {    
-margin-top: 130px;
-}
-  
-
-.item {
- margin-bottom: 38px;
-}
-
-
-
-.item-title {
-    margin-top: 16px;
-    margin-bottom: 0;
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 41px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    
-    color: $accent-color;
-}
-
-.item-text {
-    margin-top: 16px;
-    margin-bottom: 0;
-    width: 230px;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 170%;
-    
-    color: $primary-text-color;
-    
-}
-
-
-=======
-	padding-top: 125px;
+    padding-top: 125px;
     padding-bottom: 97px;
     padding-right: 20px;
     padding-left: 20px;
@@ -123,22 +18,21 @@ margin-top: 130px;
     padding-right: 115px;
     padding-left: 115px; 
      }
-	}
-	
-	.production__title, .production__title2{
-	margin-top: 0;
-	margin-bottom: 15px;
-	
-	font-family: Titan One;
-	font-style: normal;
-	font-weight: normal;
-	text-align: center;
-	text-transform: uppercase;
-	}
-	
-	.production__title {
-	font-size: 18px;
-	line-height: 21px;
+    }
+    
+    .production__title, .production__title2{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    }
+    
+    .production__title {
+    font-size: 18px;
+    line-height: 21px;
     color: $accessorial-text-color;
     
     @media screen and (min-width: 768px) {
@@ -150,18 +44,16 @@ margin-top: 130px;
         font-size: 30px;
         line-height: 34px; 
     }
-	}
-	
-	.production__title2 {
-	font-size: 34px;
-	line-height: 39px;
-	letter-spacing: 0.04em;
-	text-transform: uppercase;
+    }
+    
+    .production__title2 {
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 
-	color:  $accent-color;
-	
-	// border: 1px solid #000000;
-    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color:  $accent-color;
+    
     @media screen and (min-width: 768px) {
         font-size: 48px;
         line-height: 55px;   
@@ -173,54 +65,65 @@ margin-top: 130px;
         }
     }
     
-    .cow {
-        display: block;
-        height: auto;
-      
-        margin-bottom: 46px;
-      
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-          width: 340px;
-        }
-      
-        @media screen and (min-width: 1200px) {
-          width: 516px;
-        }
-	
+    .cow { 
+        display: inline-block;
+    }
     .text {
         display: inline-block;
 
-        // @media screen and (min-width: 768px) {
-        //     display: inline-block;  
-        //     }
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+        }
         
-        //  @media screen and (min-width: 1200px) {
-        //     display: inline-block;
-        //     }
-    }
-	.production__text, .production__text2 {
-	margin-top: 46px;
-	margin-left: 30px;
-	width: 220px;
-	font-family: DM Sans;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 12px;
-	line-height: 162%;
-	}
-	
+     @media screen and (min-width: 1200px) {
+        margin-top: 0;
+        }
+     }
+    .production__text, .production__text2 {
 
-	.production__text{
-	color: $primary-text-color;
-	}
-	
-
-	.production__text2 {
-    color:  $secondary-text-color;
+    margin-top: 46px;
+    margin-left: 30px;
+    width: 220px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
     }
     
 
-	.production-button {
+    .production__text{
+    color: $primary-text-color;
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+
+        }
+        
+     @media screen and (min-width: 1200px) {
+        margin-top: 0;
+        width: 420px;
+        font-size: 16px;
+        line-height: 176%;
+        }
+    }
+    
+
+    .production__text2 {
+    color:  $secondary-text-color;
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+
+        }
+        
+     @media screen and (min-width: 1200px) {
+        margin-top: 0;
+        width: 420px;
+        font-size: 14px;
+        line-height: 194%;
+        }
+    }
+    
+    .production-button {
         margin-left: 30px;
         width: 176px;
         height: 44px;
@@ -241,67 +144,82 @@ margin-top: 130px;
         background: $hover-secondary-color;
         cursor: pointer;
     }
-	
+    
 
-	.items {    
-	margin-top: 39px;
-	}
+    .items {    
+    margin-top: 39px;
+    }
 
-	.item {
+    .item {
      margin-bottom: 38px;
 
+     @media screen and (min-width: 768px) {
+        display: inline-block;
+        margin-right: 83px;
 
-     
-    @media screen and (min-width: 768px) {
-         display: inline-block; 
-         max-width: 160px;
-         margin-right: 90px;
-
-        //  &:nth-last-child(- n + 3) {
-        //     margin-right: 0;
-        // }
+        }
         
-      }
+     @media screen and (min-width: 1200px) {
+         display: inline-block;
+        margin-right: 30px;
+        }
+    }
 
-      @media screen and (min-width: 768px) {
-        display: inline-block; 
-        max-width: 160px;
-        margin-right: 90px;
-
-       //  &:nth-last-child(- n + 3) {
-       //     margin-right: 0;
-       // }
-       
-     }
+    .item:last-child {
+        margin-right: 0;
     }
     
-	
-	.item-title {
-	    margin-top: 16px;
-	    margin-bottom: 0;
-	    font-family: Titan One;
-	    font-style: normal;
-	    font-weight: normal;
-	    font-size: 36px;
-	    line-height: 41px;
-	    letter-spacing: 0.04em;
-	    text-transform: uppercase;
-	    
-	    color: $accent-color;
-	}
-	
-	.item-text {
-        display: inline-block;
-	    margin-top: 16px;
-	    margin-bottom: 0;
-	    width: 230px;
-	    font-family: DM Sans;
-	    font-style: normal;
-	    font-weight: bold;
-	    font-size: 12px;
-	    line-height: 170%;
-	    
-	    color: $primary-text-color;   
-	}
->>>>>>> Stashed changes
+    
+    .item-title {
+        margin-top: 16px;
+        margin-bottom: 0;
+        font-family: Titan One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 41px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        
+        color: $accent-color;
 
+        @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 55px;
+    
+            }
+            
+         @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: 66px;
+            }
+    }
+    
+    .item-text {
+        display: inline-block;
+        max-width: 160px;
+        margin-top: 16px;
+        margin-bottom: 0;
+        
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 170%;
+        
+        color: $primary-text-color; 
+        
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+            
+            font-size: 14px;
+            line-height: 174%;
+            } 
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+            min-width: 300px;
+            font-size: 16px;
+            line-height: 180%;
+             
+            }  
+    }
