@@ -143,9 +143,19 @@
   }
 }
 
-// .contacts__text {
-
-// }
+.contacts__text {
+  margin: 10px 0 0 0;
+  color: $secondary-text-color;
+  @media screen and (min-width: 768px) {
+    margin: 14px 0 0 0;
+    font-size: 14px;
+    line-height: 164%;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+  }
+}
 
 // .contacts__text {
 //   background-image: repeating-linear-gradient(
