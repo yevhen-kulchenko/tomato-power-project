@@ -275,7 +275,9 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button--dark {
@@ -307,5 +309,13 @@
   &:hover {
     cursor: pointer;
     background-color: $hover-secondary-color;
+  }
+}
+
+.contacts__icon {
+  display: inline-block;
+  margin-left: 4px;
+  @media screen and (min-width: 768px) {
+    margin-left: 8px;
   }
 }
