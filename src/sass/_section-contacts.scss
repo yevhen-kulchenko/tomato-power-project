@@ -3,6 +3,7 @@
     $primary-bg-color 170px,
     $accessorial-bg-color 170px
   );
+  background-repeat: no-repeat;
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
       $primary-bg-color 197px,
@@ -10,10 +11,16 @@
     );
   }
   @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(
-      $primary-bg-color 234px,
-      $accessorial-bg-color 234px
-    );
+    background-image: url(../images/desktop/splash.png),
+      linear-gradient($primary-bg-color 234px, $accessorial-bg-color 234px);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/splash@2x.png),
+        linear-gradient($primary-bg-color 234px, $accessorial-bg-color 234px);
+    }
+    background-position: 0 234px, 0 0;
+    background-size: contain, auto;
   }
 }
 
