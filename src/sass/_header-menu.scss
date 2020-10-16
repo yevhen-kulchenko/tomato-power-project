@@ -10,7 +10,6 @@ header{
     align-items: center;
     justify-content: space-between;
 
-
     width: 100%;
     padding-top: 6px;
     padding-left: 20px;
@@ -20,15 +19,22 @@ header{
         padding-top: 37px;
         padding-left: 34px;
         padding-right: 34px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 46px;
+        padding-right: 115px;
     }
 }
 
 .nav-wrap{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.button-mobile-menu{
+.burger-button{
     display: inline-flex;
     outline: transparent;
 
@@ -43,43 +49,63 @@ header{
     }
 
     &.is-open{
-
         position: absolute;
         z-index: 5;
         right: 20px;
         top: 23px;
     
-        .icon-mobile-menu{
+        .button-icon-menu{
             display: none;
         }
-        .icon-mobile-close{
+        .button-icon-close{
             display: block;
         }
     }
 }
 
-.icon-mobile-close{
+.button-icon-close{
     display: none;
 }
 
 .navigation{
     display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
 
-    padding-top: 60px;
-    width: 250px;
-    height: 502px;
+    @media screen and (max-width: 1199px) {
+        &.is-open{
+            position: absolute;
+            top: 0;
+            right: 0;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            padding-top: 60px;
+            width: 250px;
+            height: 502px;
+    
+            background-color: $menu-bg-color;
+        }   
+    }
 
-    background-color: $menu-bg-color;
+    @media screen and (min-width: 768px) {
+        &.is-open{
+            width: 254px;
+            height: 1020px;    
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        position: relative;
 
-    &.is-open{
-        display: block;
+        display: flex;
+
+        padding-top: 0;
+        margin-right: 110px;
     }
 }
 
-.buy-btn{
+.header-button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,8 +114,6 @@ header{
     width: 209px;
     height: 44px;
     padding: 0;
-    margin-left: 21px;
-    margin-right: 21px;
 
     color: $accent-color;
     background: $primary-bg-color;
@@ -101,24 +125,42 @@ header{
     &:active{
         background: $hover-secondary-color;
     }
+    @media screen and (min-width: 768px) {
+        width: 186px;
+    }
 }
 
-.btn-desktop{
-    width: 160px;
-    margin: 0 0 0 30px;
+.mobile-button{
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
 
+.main-button{
+    width: 160px;
 
     @media screen and (max-width: 767px) {
         display: none;
     }
 
+    @media screen and (max-width: 1199px) {
+        margin: 0 0 0 30px;
+    }
 }
 
-.buy-btn-icon{
+.header-button-icon{
     display: block;
-    margin-left: 25px;
+    margin-left: 27px;
     width: 12px;
     height: 12px;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 20px;
+    }
+}
+
+.main-button > .header-button-icon{
+    margin-left: 12px;
 }
 
 .site-nav-list{
@@ -126,17 +168,30 @@ header{
 
     font-weight: 700;
     color: $white-text-color;
-}
 
-.site-nav-item{
-    border-bottom: 1px solid #E18298;
-
-    &:first-of-type{
-        border-top: 1px solid #E18298;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-top: 0;
     }
 }
 
-.nav-link {
+.site-nav-item{
+    @media screen and (max-width: 1199px) {
+        border-bottom: 1px solid #E18298;
+
+        &:first-of-type{
+            border-top: 1px solid #E18298;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child){
+            margin-right: 35px;
+        }
+    }
+}
+
+.item-link {
     display: block;
 
     width: 250px;
@@ -145,7 +200,21 @@ header{
     padding-bottom: 12px;
     padding-left: 21px;
 
-    
+    line-height: 1.29;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 24px;
+        width: 254px;
+    } 
+
+    @media screen and (min-width: 1200px) {
+        width: auto;
+        padding-left: 0;
+
+        font-size: 16px;
+        line-height: 1.31;
+    }
+
     &:hover,
     &:focus,
     &:active {
@@ -153,6 +222,6 @@ header{
     }
 }
 
-.nav-link.current{
+.item-link.current{
     color: $accent-color;
 }
