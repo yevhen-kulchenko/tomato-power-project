@@ -31,10 +31,12 @@
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.15;
+    margin-bottom: 150px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 58px;
     line-height: 1.14;
+    margin-bottom: 259px;
   }
 }
 .title-text {
@@ -171,7 +173,13 @@
 
 .blok-absolut {
   position: absolute;
-  top: -23%;
+  bottom: 350px;
+  @media screen and (min-width: 768px) {
+    bottom: 371px;
+  }
+  @media screen and (min-width: 1200px) {
+    bottom: 430px;
+  }
 }
 .is-hidden {
   display: none;
