@@ -1,6 +1,7 @@
 .hero {
     position: relative;
     overflow: hidden;
+
     padding-top: 56px;
     height: 502px;
 
@@ -12,14 +13,16 @@
         height: 665px;
     }
 }
+
 .hero__box {
     position: absolute;
     z-index: 2;
     top: 0%;
+
     width: 100%;
     height: 502px;
-    background-image: 
-        url(../images/mobile/header-icecream-mobile.png);
+
+    background-image: url(../images/mobile/header-icecream-mobile.png);
     background-size: 170px 410px; 
     background-repeat: no-repeat;
     background-position: top 92px right 32px;
@@ -35,6 +38,7 @@
     
     @media screen and (min-width: 768px) {
         height: 400px;
+
         background-image:
             url(../images/tablet/header-icecream-tablet.png),
             url(../images/tablet/header-milk-tablet.png),
@@ -44,21 +48,23 @@
             background-size: 143px 336px, 125px, 168px 133px, 16px,16px;
             background-position: top 63px right 247px, top 245px left 34px, bottom 0 right 34px, top 94px right 34px, top 151px right 34px;
 
-            @media screen and (min-device-pixel-ratio: 2),
-            screen and (-webkit-min-device-pixel-ratio: 2),
-            screen and (-o-min-device-pixel-ratio: 2/1),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-                background-image: 
-                    url(../images/tablet/header-icecream-tablet@2x.png),
-                    url(../images/tablet/header-milk-tablet@2x.png),
-                    url(../images/tablet/girl-tablet@2x.png),
-                    url(../images/tablet/ellipse1-tablet@2x.png),
-                    url(../images/tablet/ellipse1-tablet@2x.png);
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: 
+                url(../images/tablet/header-icecream-tablet@2x.png),
+                url(../images/tablet/header-milk-tablet@2x.png),
+                url(../images/tablet/girl-tablet@2x.png),
+                url(../images/tablet/ellipse1-tablet@2x.png),
+                url(../images/tablet/ellipse1-tablet@2x.png);
         }
     }
+
     @media screen and (min-width: 1200px) {
         height: 665px;
+
         background-image:
         url(../images/desktop/header-icecream.png),
         url(../images/desktop/header-milk.png),
@@ -82,10 +88,13 @@
         }   
     }
 }
+
 .hero__title {
     margin: 0;
     padding-top: 193px;
     padding-left: 20px;
+    padding-bottom: 20px;
+
     font-family: Titan One;
     font-style: normal;
     font-weight: normal;
@@ -93,52 +102,62 @@
     line-height: 30px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding-bottom: 20px;
+
     color: $white-text-color;
 
     @media screen and (min-width: 768px) {
         padding-top: 102px;
         padding-left: 34px;
+
         font-size: 22px;
         line-height: 25px;
     }
+
     @media screen and (min-width: 1200px) {
         padding-top: 171px;
         padding-left: 115px;
+        padding-bottom: 25px;
+
         font-size: 38px;
         line-height: 44px;
-        padding-bottom: 25px;
     }
 }
 .hero__accent {
     font-size: 48px;
     line-height: 96.5%;
+
     color: $accent-color;
 
     @media screen and (min-width: 768px) {
         font-size: 34px;
         line-height: 90.5%;
     }
+
     @media screen and (min-width: 1200px) {
         font-size: 58px;
         line-height: 90.5%;
     }
 }
+
 .hero__list {
+    display: inline-flex;
+
     margin: 0;
     padding-left: 20px;
-    display: inline-flex;
     
     @media screen and (min-width: 768px) {
         padding-left: 34px;
     }
+
     @media screen and (min-width: 1200px) {
         padding-left: 115px;
     }
 }
+
 .hero__item {
     list-style: none;
 }
+
 .hero__item:not(:last-child) {
     margin-right: 8px;
 
@@ -146,8 +165,10 @@
         margin-right: 15px;
     }
 }
+
 .button {
     height: 24px;
+
     font-family: DM Sans;
     font-style: normal;
     font-weight: normal;
@@ -158,12 +179,15 @@
 
     @media screen and (min-width: 1200px) {
         height: 40px;
+
         font-size: 14px;
         line-height: 18px;
     }
 }
+
 .dark-button {
     width: 62px;
+
     color: $white-text-color;
     background: $accent-color;
 
@@ -171,8 +195,10 @@
         width: 104px;
     }
 }
+
 .light-button {
     width: 83px;
+
     color: $accent-color;
     background: $primary-bg-color;
 
@@ -180,43 +206,52 @@
         width: 138px;
     }
 }
+
 .dark-button:hover,
 .dark-button:focus {
     background: $section-dots-color;
     cursor: pointer;
 }
+
 .light-button:hover,
 .light-button:focus {
     background: $hover-secondary-color;
     cursor: pointer;
 }
+
 .hero__description {
     position: absolute;
     z-index: 2;
-    display: block;
     top: 292px;
     left: 154px;
+
+    display: block;
     width: 115px;
     height: 48px;
 
     @media screen and (max-width: 767px){
         display: none;        
     }
+
     @media screen and (min-width: 1200px){
         top: 485px;
         left: 295px;
+
         width: 200px;
         height: 78px;
     }
 }
+
 .hero__text {
     margin: 0;
     padding: 0;
+
     font-family: DM Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 8px;
     line-height: 150%;
+
     color: $white-text-color;
 
     @media screen and (min-width: 1200px) {
@@ -224,11 +259,14 @@
         line-height: 140%;
     }
 }
+
 .small-button {
     position: absolute;
-    margin-top: 7px;
+
     width: 18px;
     height: 18px;
+    margin-top: 7px;
+
     border: none;
     border-radius: 50%;
     background-color: $primary-bg-color;
@@ -240,42 +278,50 @@
         height: 26px;
     }
 }
+
 .small-button-arrow {
     width: 15px;
     height: 15px;
+
     fill: $section-dots-color;
 }
+
 .franchising {
     position: absolute;
     z-index: 2;
+
     top: 96px;
     right: 44px;
 
     @media screen and (max-width: 767px) {
         display: none;        
     }
+
     @media screen and (min-width: 1200px) {
         top: 160px;
         right: 115px;
     }
 }
+
 .franchising__text {
     margin: 0;
     padding: 0;
+
     font-family: DM Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 8px;
     line-height: 10px;
     text-align: right;
+
     color: $white-text-color;
     
     @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: 18px;
     }
-
 }
+
 .franchising__text:not(:last-child) {
     margin-bottom: 13px;
 
@@ -283,6 +329,7 @@
         margin-bottom: 15px;
     }
 }
+
 .franchising__accent {
     font-family: Titan One;
     font-style: normal;
@@ -292,6 +339,7 @@
     text-align: right;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+
     color: $accent-color;
 
     @media screen and (min-width: 1200px) {
@@ -299,12 +347,15 @@
         line-height: 53px;
     }
 }
+
 .ellipse {
     position: absolute;
     top: 83px;
     right: -62px;
+
     width: 345px;
     height: 345px;
+
     background: #FFA5BA;
     border-radius: 50%;
 
@@ -314,6 +365,7 @@
         width: 323px;
         height: 323px;
     }
+    
     @media screen and (min-width: 1200px) {
         top: 52px;
         right: 267px;
