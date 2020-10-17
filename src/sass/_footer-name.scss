@@ -4,8 +4,13 @@
   justify-content: start;
 
   @media screen and (min-width: 768px) {
-    width: 60%;
+    width: 340px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 500px;
+  }
+
 }
 .footer__name__title,
 .footer__name__text {
@@ -34,7 +39,7 @@
   }
   @media screen and (min-width: 1200px) {
     width: 100%;
-    font-size: 34px;
+    font-size: 30px;
     line-height: 1.13;
   }
 }
