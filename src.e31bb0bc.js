@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./../images/mobile/header-icecream-mobile.png":[["header-icecream-mobile.d5524061.png","images/mobile/header-icecream-mobile.png"],"images/mobile/header-icecream-mobile.png"],"./../images/mobile/header-icecream-mobile@2x.png":[["header-icecream-mobile@2x.ffbfb891.png","images/mobile/header-icecream-mobile@2x.png"],"images/mobile/header-icecream-mobile@2x.png"],"./../images/tablet/header-icecream-tablet.png":[["header-icecream-tablet.d7232316.png","images/tablet/header-icecream-tablet.png"],"images/tablet/header-icecream-tablet.png"],"./../images/tablet/header-milk-tablet.png":[["header-milk-tablet.bf379d5b.png","images/tablet/header-milk-tablet.png"],"images/tablet/header-milk-tablet.png"],"./../images/tablet/girl-tablet.png":[["girl-tablet.3bcc7851.png","images/tablet/girl-tablet.png"],"images/tablet/girl-tablet.png"],"./../images/tablet/ellipse1-tablet.png":[["ellipse1-tablet.cbbf6c84.png","images/tablet/ellipse1-tablet.png"],"images/tablet/ellipse1-tablet.png"],"./../images/tablet/header-icecream-tablet@2x.png":[["header-icecream-tablet@2x.ea0bfe86.png","images/tablet/header-icecream-tablet@2x.png"],"images/tablet/header-icecream-tablet@2x.png"],"./../images/tablet/header-milk-tablet@2x.png":[["header-milk-tablet@2x.6a30a959.png","images/tablet/header-milk-tablet@2x.png"],"images/tablet/header-milk-tablet@2x.png"],"./../images/tablet/girl-tablet@2x.png":[["girl-tablet@2x.920ece66.png","images/tablet/girl-tablet@2x.png"],"images/tablet/girl-tablet@2x.png"],"./../images/tablet/ellipse1-tablet@2x.png":[["ellipse1-tablet@2x.de065a3b.png","images/tablet/ellipse1-tablet@2x.png"],"images/tablet/ellipse1-tablet@2x.png"],"./../images/desktop/header-icecream.png":[["header-icecream.0504a5c3.png","images/desktop/header-icecream.png"],"images/desktop/header-icecream.png"],"./../images/desktop/header-milk.png":[["header-milk.df6a81b7.png","images/desktop/header-milk.png"],"images/desktop/header-milk.png"],"./../images/desktop/girl.png":[["girl.7dfbc1b0.png","images/desktop/girl.png"],"images/desktop/girl.png"],"./../images/desktop/ellipse1.png":[["ellipse1.00af0bed.png","images/desktop/ellipse1.png"],"images/desktop/ellipse1.png"],"./../images/mobile/milk-mobile.webp":[["milk-mobile.7570a8c4.webp","images/mobile/milk-mobile.webp"],"images/mobile/milk-mobile.webp"],"./../images/desktop/milk.webp":[["milk.9024fae0.webp","images/desktop/milk.webp"],"images/desktop/milk.webp"],"./../images/desktop/splash.png":[["splash.434476e5.png","images/desktop/splash.png"],"images/desktop/splash.png"],"./../images/desktop/splash@2x.png":[["splash@2x.9f5583ce.png","images/desktop/splash@2x.png"],"images/desktop/splash@2x.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49337" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55338" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

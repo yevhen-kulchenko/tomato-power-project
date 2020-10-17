@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+.hero {
+  background-color: #FFB8CA;
+}
+
+.hero__title {
+  color: #FFFFFF;
+}
+
+.hero__accent {
+  color: #D41443;
+}
+
+.hero__list {
+  display: inline-flex;
+}
+
+.hero__item {
+  list-style: none;
+}
+
+/*# sourceMappingURL=/main.07544d9b.css.map */
