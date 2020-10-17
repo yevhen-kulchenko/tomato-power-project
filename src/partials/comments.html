@@ -1,6 +1,6 @@
 <section class="comments-background">
-  <div class="container comments">
-    <!-- <h2 class="comments__title visually-hidden">Comments</h2> -->
+  <div class="container">
+    <h2 class="comments__title visually-hidden">Comments</h2>
     <picture>
       <source
         srcset="
@@ -16,7 +16,7 @@
           ./images/tablet/collage-tablet@2x.webp 2x
         "
         type="image/webp"
-        media="(max-width: 1199px)"
+        media="(min-width: 768px)"
       />
       <source
         srcset="
@@ -24,7 +24,7 @@
           ./images/mobile/collage-mobile@2x.webp 2x
         "
         type="image/webp"
-        media="(max-width: 767px)"
+        media="(min-width: 320px)"
       />
       <source
         srcset="
@@ -38,11 +38,11 @@
           ./images/tablet/collage-tablet.jpg    1x,
           ./images/tablet/collage-tablet@2x.jpg 2x
         "
-        media="(max-width: 1199px)"
+        media="(min-width: 768px)"
       />
       <source
         srcset="./images/mobile/collage-mobile@2x.jpg 2x"
-        media="(max-width: 767px)"
+        media="(min-width: 320px)"
       />
       <img
         class="comments__gallery"
@@ -51,60 +51,120 @@
         width="320"
       />
     </picture>
-
     <div class="slider">
-      <picture>
-        <source
-          srcset="
-            ./images/desktop/testimonials1.webp    1x,
-            ./images/desktop/testimonials1@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <img
-          class="slider__testimonials"
-          src="./images/desktop/testimonials1.png"
-          srcset="./images/desktop/testimonials1@2x.png 2x"
-          alt="Testimonials"
-          width="85"
-        />
-      </picture>
+      <div class="slider__item">
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/testimonials1.webp    1x,
+              ./images/desktop/testimonials1@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="comments__testimonials"
+            src="./images/desktop/testimonials1.png"
+            srcset="./images/desktop/testimonials1@2x.png 2x"
+            alt="Testimonials"
+            width="85"
+          />
+        </picture>
 
-      <div class="slider__book">
-        <div class="slider__gradient">
-          <svg class="slider__quotes">
-            <use href="./images/icons/sprite.svg#quotes"></use>
+        <div class="comments__book">
+          <div class="comments__gradient">
+            <svg class="comments__quotes">
+              <use href="./images/icons/sprite.svg#quotes"></use>
+            </svg>
+            <p class="comments__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+              ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </div>
+
+        <div class="comments__title">
+          <svg class="comments__points">
+            <use href="./images/icons/sprite.svg#points2"></use>
           </svg>
-          <p class="slider__text">
-            Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-            ipsum primis in nibh vel risus.
-          </p>
+          <p class="comments__title-name">Emily, Los Angeles</p>
         </div>
       </div>
+      <div class="slider__item">
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/testimonials2.webp    1x,
+              ./images/desktop/testimonials2@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="comments__testimonials"
+            src="./images/desktop/testimonials2.png"
+            srcset="./images/desktop/testimonials2@2x.png 2x"
+            alt="Testimonials"
+            width="85"
+          />
+        </picture>
 
-      <div class="slider__title">
-        <svg class="slider__points">
-          <use href="./images/icons/sprite.svg#points2"></use>
-        </svg>
-        <p class="slider__title-name">Emily, Los Angeles</p>
-        <ul class="slider_list list">
-          <li class="slider__item">
-            <svg class="slider__icon-home">
-              <use href="./images/icons/sprite.svg#icon-home"></use>
+        <div class="comments__book">
+          <div class="comments__gradient">
+            <svg class="comments__quotes">
+              <use href="./images/icons/sprite.svg#quotes"></use>
             </svg>
-          </li>
-          <li class="slider__item">
-            <svg class="slider__icon-dot">
-              <use href="./images/icons/sprite.svg#icon-dot"></use>
+            <p class="comments__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+              ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </div>
+
+        <div class="comments__title">
+          <svg class="comments__points">
+            <use href="./images/icons/sprite.svg#points2"></use>
+          </svg>
+          <p class="comments__title-name">Emily, Los Angeles</p>
+        </div>
+      </div>
+      <div class="slider__item">
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/testimonials3.webp    1x,
+              ./images/desktop/testimonials3@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="comments__testimonials"
+            src="./images/desktop/testimonials3.png"
+            srcset="./images/desktop/testimonials3@2x.png 2x"
+            alt="Testimonials"
+            width="85"
+          />
+        </picture>
+
+        <div class="comments__book">
+          <div class="comments__gradient">
+            <svg class="comments__quotes">
+              <use href="./images/icons/sprite.svg#quotes"></use>
             </svg>
-          </li>
-          <li class="slider__item">
-            <svg class="slider__icon-dot">
-              <use href="./images/icons/sprite.svg#icon-dot"></use>
-            </svg>
-          </li>
-        </ul>
+            <p class="comments__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+              ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </div>
+
+        <div class="comments__title">
+          <svg class="comments__points">
+            <use href="./images/icons/sprite.svg#points2"></use>
+          </svg>
+          <p class="comments__title-name">Emily, Los Angeles</p>
+        </div>
       </div>
     </div>
   </div>
