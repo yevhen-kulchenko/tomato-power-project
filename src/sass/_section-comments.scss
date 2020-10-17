@@ -1,24 +1,9 @@
-.comments {
-}
-
-.comments__title {
-}
-
 .comments__gallery {
   display: block;
+  width: 100%;
   height: auto;
 
   margin-bottom: 80px;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 768px;
-    margin-bottom: 121px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-    margin-bottom: 123px;
-  }
 }
 
 .slider {
