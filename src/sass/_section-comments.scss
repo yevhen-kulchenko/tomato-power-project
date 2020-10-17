@@ -7,20 +7,22 @@
 }
 
 .slider {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 5px;
-  padding-right: 5px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  margin: 0 auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-left: 59px;
-    padding-right: 59px;
+    padding-left: 74px;
+    padding-right: 74px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-left: 163px;
-    padding-right: 163px;
+    padding-left: 178px;
+    padding-right: 176px;
   }
 }
 
@@ -28,6 +30,8 @@
   display: block;
   height: auto;
   margin-bottom: 29px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 19px;
@@ -51,7 +55,7 @@
   padding-bottom: 26px;
   padding-left: 57px;
 
-  background-color: #fafafa;
+  background-color: $comment-bg-color;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 620px;
@@ -78,10 +82,10 @@
 
   background-image: repeating-linear-gradient(
     180deg,
-    #e1e1e1,
-    #e1e1e1 1px,
-    #fafafa 1px,
-    #fafafa 30px
+    $underline-color,
+    $underline-color 1px,
+    $comment-bg-color 1px,
+    $comment-bg-color 30px
   );
 }
 
@@ -95,7 +99,7 @@
 
   text-align: center;
 
-  color: #000000;
+  color: $primary-text-color;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
@@ -119,7 +123,7 @@
 
 .slider__title-name {
   margin-top: 18px;
-  margin-bottom: 30px;
+
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
@@ -129,11 +133,10 @@
 
   text-align: center;
 
-  color: #000000;
+  color: $primary-text-color;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 14px;
-    margin-bottom: 35px;
 
     font-size: 16px;
     line-height: calc(30 / 16);
@@ -142,19 +145,10 @@
 
   @media screen and (min-width: 1200px) {
     margin-top: 15px;
-    margin-bottom: 35px;
 
     font-size: 20px;
     line-height: calc(37 / 20);
     /* or 37px 186%*/
-  }
-}
-
-.slider__item {
-  display: inline-block;
-
-  & + .slider__item {
-    margin-left: 18px;
   }
 }
 
@@ -181,14 +175,4 @@
   display: block;
   width: 32px;
   height: 4px;
-}
-
-.slider__icon-home {
-  width: 12px;
-  height: 12px;
-}
-
-.slider__icon-dot {
-  width: 12px;
-  height: 12px;
 }
