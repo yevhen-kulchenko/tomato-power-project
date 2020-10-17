@@ -5,11 +5,12 @@
   @media screen and (min-width: 768px) {
     width: 270px;
   }
-  @media screen and (min-width: 1200px) {
-      width: 320px;
-  }
 
+  @media screen and (min-width: 1200px) {
+    width: 320px;
+  }
 }
+
 .social-network {
   display: flex;
   align-items: center;
@@ -21,10 +22,12 @@
     margin-bottom: 50px;
   }
 }
+
 .social-network__item,
 .social-network__link {
   width: 32px;
   height: 32px;
+
   border-radius: 50%;
 
   @media screen and (min-width: 768px) {
@@ -32,16 +35,19 @@
     height: 34px;
   }
 }
+
 .social-network__item:not(:last-child) {
   margin-right: 28px;
 
   @media screen and (min-width: 768px) {
     margin-right: 30px;
   }
+
   @media screen and (min-width: 1200px) {
     margin-right: 24px;
   }
 }
+
 .social-network__link {
   display: flex;
   align-items: center;
@@ -50,16 +56,20 @@
   background-color: $accessorial-text-color;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     background-color: $accent-color;
   }
 }
+
 .social-network__icon {
   width: 20px;
   height: 20px;
+
   fill: $white-text-color;
 }
+
 .footer__address {
   display: flex;
   align-items: center;
@@ -71,6 +81,7 @@
     margin-bottom: 0;
   }
 }
+
 .footer__address__text,
 .footer__address__tel {
   font: {
@@ -78,23 +89,26 @@
     weight: bold;
     size: 12px;
   }
+  
   line-height: 1.83;
-
   text-align: right;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.86;
   }
+
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.02em;
   }
 }
+
 .footer__address__text {
   color: $primary-text-color;
 }
+
 .footer__address__tel {
   color: $accent-color;
 }
