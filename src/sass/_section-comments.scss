@@ -100,13 +100,44 @@
   position: relative;
   z-index: -1;
 
-  background-image: repeating-linear-gradient(
+  background-image: linear-gradient(
     180deg,
-    $underline-color,
-    $underline-color 1px,
-    $comment-bg-color 1px,
-    $comment-bg-color 30px
+    #fafafa 48.15%,
+    #e3e3e3 48.15%,
+    #e3e3e3 50%,
+    #fafafa 50%,
+    #fafafa 98.15%,
+    #e3e3e3 98.15%,
+    #e3e3e3 100%
   );
+  background-size: 54px 54px;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      180deg,
+      #fafafa 48.33%,
+      #e3e3e3 48.33%,
+      #e3e3e3 50%,
+      #fafafa 50%,
+      #fafafa 98.33%,
+      #e3e3e3 98.33%,
+      #e3e3e3 100%
+    );
+    background-size: 60px 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+      180deg,
+      #fafafa 48.28%,
+      #e3e3e3 48.28%,
+      #e3e3e3 50%,
+      #fafafa 50%,
+      #fafafa 98.28%,
+      #e3e3e3 98.28%,
+      #e3e3e3 100%
+    );
+    background-size: 58px 58px;
+  }
 }
 
 .comments__text {
