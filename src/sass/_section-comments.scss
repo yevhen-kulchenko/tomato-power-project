@@ -1,8 +1,37 @@
-.comments {
+.comments-background {
+  background-image: linear-gradient(
+    $accessorial-bg-color 39px,
+    rgb(254, 249, 251) 39px,
+    rgb(254, 249, 251) 40px,
+    transparent 40px,
+    transparent 100%
+  );
+  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      $accessorial-bg-color 100px,
+      rgb(254, 249, 251) 100px,
+      rgb(254, 249, 251) 101px,
+      transparent 101px,
+      transparent 100%
+    );
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+      $accessorial-bg-color 156px,
+      rgb(254, 249, 251) 156px,
+      rgb(254, 249, 251) 157px,
+      transparent 157px,
+      transparent 100%
+    );
+  }
 }
 
-.comments__title {
-}
+// .comments {
+// }
+
+// .comments__title {
+// }
 
 .comments__gallery {
   display: block;
