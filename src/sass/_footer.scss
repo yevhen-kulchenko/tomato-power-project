@@ -5,22 +5,29 @@
 
   background-color: $accessorial-bg-color;
 }
+
 .footer__conteiner {
-  width: 100%;
   padding-left: 20px;
   padding-right: 20px;
 
   @media screen and (min-width: 320px) {
     width: 320px;
   }
+
   @media screen and (min-width: 768px) {
-    width: 100%;
     display: flex;
+    justify-content: space-between;
+
+    width: 768px;
     padding-left: 36px;
     padding-right: 36px;
   }
+
   @media screen and (min-width: 1200px) {
+    width: 1200px;
     padding-left: 114px;
     padding-right: 114px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
