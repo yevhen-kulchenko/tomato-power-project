@@ -38,15 +38,15 @@ header{
         padding-left: 46px;
         padding-right: 115px;
     }
+
+    &__wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
-.nav-wrap{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.burger-button{
+.header-menu__burger-button{
     display: inline-flex;
     outline: transparent;
 
@@ -66,17 +66,17 @@ header{
         right: 20px;
         top: 23px;
     
-        .button-icon-menu{
+        .header-menu__burger-button__icon-menu{
             display: none;
         }
-        .button-icon-close{
+        .header-menu__burger-button__icon-close{
             display: block;
         }
     }
-}
 
-.button-icon-close{
-    display: none;
+    &__icon-close{
+        display: none;
+    }
 }
 
 .navigation{
@@ -117,7 +117,7 @@ header{
     }
 }
 
-.header-button{
+.header-menu__button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,13 +142,7 @@ header{
     }
 }
 
-.mobile-button{
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
-}
-
-.main-button{
+.header-menu__main-button{
     width: 160px;
 
     @media screen and (max-width: 767px) {
@@ -158,21 +152,33 @@ header{
     @media screen and (max-width: 1199px) {
         margin: 0 0 0 30px;
     }
-}
 
-.header-button-icon{
-    display: block;
-    margin-left: 27px;
-    width: 12px;
-    height: 12px;
+    &__icon{
+        display: block;
+        margin-left: 27px;
+        width: 12px;
+        height: 12px;
+    }
 
-    @media screen and (min-width: 768px) {
-        margin-left: 20px;
+    & > .header-menu__button__icon{
+        margin-left: 12px;
     }
 }
 
-.main-button > .header-button-icon{
-    margin-left: 12px;
+.header-menu__mobile-button{
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+
+    & > .header-menu__button__icon{
+        @media screen and (min-width: 320px) {
+            margin-left: 25px;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-left: 20px;
+        }
+    }
 }
 
 .site-nav-list{
@@ -187,7 +193,7 @@ header{
     }
 }
 
-.site-nav-item{
+.site-nav-list__item{
     @media screen and (max-width: 1199px) {
         border-bottom: 1px solid #E18298;
 
@@ -203,7 +209,7 @@ header{
     }
 }
 
-.item-link {
+.site-nav-list__item__link {
     display: block;
 
     width: 250px;
@@ -232,8 +238,8 @@ header{
     &:active {
         color: $accent-color;
     }
-}
 
-.item-link.current{
-    color: $accent-color;
+    &.current{
+        color: $accent-color;
+    }
 }
