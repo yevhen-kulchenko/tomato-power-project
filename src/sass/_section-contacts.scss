@@ -332,7 +332,8 @@
     width: 198px;
   }
   
-  &:hover {
+  &:hover,
+  &:focus {
     cursor: pointer;
     background-color: $section-dots-color;
   }
@@ -352,7 +353,8 @@
     width: 180px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     cursor: pointer;
     background-color: $hover-secondary-color;
   }
