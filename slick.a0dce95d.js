@@ -117,83 +117,17 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../images/mobile/header-icecream-mobile.png":[["header-icecream-mobile.d5524061.png","images/mobile/header-icecream-mobile.png"],"images/mobile/header-icecream-mobile.png"],"./../images/mobile/header-icecream-mobile@2x.png":[["header-icecream-mobile@2x.ffbfb891.png","images/mobile/header-icecream-mobile@2x.png"],"images/mobile/header-icecream-mobile@2x.png"],"./../images/tablet/header-icecream-tablet.png":[["header-icecream-tablet.d7232316.png","images/tablet/header-icecream-tablet.png"],"images/tablet/header-icecream-tablet.png"],"./../images/tablet/header-milk-tablet.png":[["header-milk-tablet.bf379d5b.png","images/tablet/header-milk-tablet.png"],"images/tablet/header-milk-tablet.png"],"./../images/tablet/girl-tablet.png":[["girl-tablet.3bcc7851.png","images/tablet/girl-tablet.png"],"images/tablet/girl-tablet.png"],"./../images/tablet/ellipse1-tablet.png":[["ellipse1-tablet.cbbf6c84.png","images/tablet/ellipse1-tablet.png"],"images/tablet/ellipse1-tablet.png"],"./../images/tablet/header-icecream-tablet@2x.png":[["header-icecream-tablet@2x.ea0bfe86.png","images/tablet/header-icecream-tablet@2x.png"],"images/tablet/header-icecream-tablet@2x.png"],"./../images/tablet/header-milk-tablet@2x.png":[["header-milk-tablet@2x.6a30a959.png","images/tablet/header-milk-tablet@2x.png"],"images/tablet/header-milk-tablet@2x.png"],"./../images/tablet/girl-tablet@2x.png":[["girl-tablet@2x.920ece66.png","images/tablet/girl-tablet@2x.png"],"images/tablet/girl-tablet@2x.png"],"./../images/tablet/ellipse1-tablet@2x.png":[["ellipse1-tablet@2x.de065a3b.png","images/tablet/ellipse1-tablet@2x.png"],"images/tablet/ellipse1-tablet@2x.png"],"./../images/desktop/header-icecream.png":[["header-icecream.0504a5c3.png","images/desktop/header-icecream.png"],"images/desktop/header-icecream.png"],"./../images/desktop/header-milk.png":[["header-milk.df6a81b7.png","images/desktop/header-milk.png"],"images/desktop/header-milk.png"],"./../images/desktop/girl.png":[["girl.7dfbc1b0.png","images/desktop/girl.png"],"images/desktop/girl.png"],"./../images/desktop/ellipse1.png":[["ellipse1.00af0bed.png","images/desktop/ellipse1.png"],"images/desktop/ellipse1.png"],"./../images/mobile/milk-mobile.webp":[["milk-mobile.7570a8c4.webp","images/mobile/milk-mobile.webp"],"images/mobile/milk-mobile.webp"],"./../images/desktop/milk.webp":[["milk.9024fae0.webp","images/desktop/milk.webp"],"images/desktop/milk.webp"],"./../images/desktop/splash.png":[["splash.434476e5.png","images/desktop/splash.png"],"images/desktop/splash.png"],"./../images/desktop/splash@2x.png":[["splash@2x.9f5583ce.png","images/desktop/splash@2x.png"],"images/desktop/splash@2x.png"],"./../images/icons/icon-home.svg":[["icon-home.5038f766.svg","images/icons/icon-home.svg"],"images/icons/icon-home.svg"],"./../images/icons/icon-dot.svg":[["icon-dot.d2520d31.svg","images/icons/icon-dot.svg"],"images/icons/icon-dot.svg"],"./../images/icons/icon-home-accent.svg":[["icon-home-accent.2d30fe10.svg","images/icons/icon-home-accent.svg"],"images/icons/icon-home-accent.svg"],"./../images/icons/icon-dot-accent.svg":[["icon-dot-accent.457dcc2e.svg","images/icons/icon-dot-accent.svg"],"images/icons/icon-dot-accent.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-"use strict";
-
-require("./sass/main.scss");
-},{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+})({"slick.js":[function(require,module,exports) {
+$(document).ready(function () {
+  $('.slider').slick({
+    arrows: false,
+    dots: true,
+    dotsClass: 'slick-dots',
+    slideToShow: 1,
+    mobileFirst: true
+  });
+});
+},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -397,5 +331,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","slick.js"], null)
+//# sourceMappingURL=/slick.a0dce95d.js.map
