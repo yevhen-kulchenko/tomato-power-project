@@ -73,27 +73,27 @@
   margin-right: auto;
   margin-bottom: 30px;
   padding-top: 43px;
-  padding-right: 66px;
+  padding-right: 50px;
   padding-bottom: 26px;
-  padding-left: 57px;
+  padding-left: 50px;
 
   background-color: $comment-bg-color;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 620px;
     margin-bottom: 24px;
-    padding-top: 30px;
+    padding-top: 46px;
     padding-right: 36px;
-    padding-bottom: 28px;
-    padding-left: 40px;
+    padding-bottom: 35px;
+    padding-left: 60px;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 926px;
     margin-bottom: 15px;
-    padding-top: 32px;
+    padding-top: 47px;
     padding-right: 54px;
-    padding-bottom: 32px;
+    padding-bottom: 36px;
     padding-left: 50px;
   }
 }
@@ -112,7 +112,7 @@
     #e3e3e3 98.15%,
     #e3e3e3 100%
   );
-  background-size: 54px 54px;
+  background-size: 54px 60px;
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
@@ -143,11 +143,13 @@
 }
 
 .comments__text {
+  max-width: 157px;
+  padding-left: 10px;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 2.3;
+  line-height: calc(30.6 / 12);
   /* or 31px 255% */
 
   text-align: center;
@@ -157,6 +159,11 @@
   background-size: 58px 58px;
 
   @media screen and (min-width: 768px) {
+    max-width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+
     font-size: 14px;
     line-height: 2.16;
     /* or 30px 216%*/
@@ -164,6 +171,8 @@
   }
 
   @media screen and (min-width: 1200px) {
+    max-width: 750px;
+
     font-size: 16px;
     line-height: 1.86;
     /* or 30px 186%*/
@@ -218,12 +227,12 @@
   height: 40px;
 
   @media screen and (min-width: 768px) {
-    top: 0;
-    left: 0;
+    top: -17px;
+    left: -9px;
   }
 
   @media screen and (min-width: 1200px) {
-    top: 0;
+    top: -18px;
     left: 0;
   }
 }
